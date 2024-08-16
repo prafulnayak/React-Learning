@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Navigate } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 
 export default function NavBar(props){
 
@@ -21,10 +21,10 @@ export default function NavBar(props){
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" to="/features">Features</a>
+          <Link className="nav-link" to="/features">Features</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" to="/forms">Pricing</a>
+          <Link className="nav-link" to="/forms">Pricing</Link>
         </li>
       </ul>
     </div>
